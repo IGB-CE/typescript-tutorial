@@ -1,34 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// let name: string;
+// // union type for age = number or string
+// let age: number | string;
+// let isStudent: boolean;
+// let hobbies: string[];
+// // Tuple type for role = fixed-length array with specific types
+// let role: [number, string];
 
+// let printName: (name: string) => never;
+// // function printName(name:string) {
+// //   console.log("Name is: " + name);
+// // }
+
+// // type Person = {
+// //   name: string;
+// //   age?: number;
+// // }
+
+// // let person: Person = {
+// //   name: "Alice",
+// // }
+
+// // let lotsOfPeople: Person[];
+
+// interface Person {
+//   name: string;
+//   age?: number;
+// }
+
+// interface Guy extends Person {
+//   profession: string;
+// }
+
+// type X = Person & {
+//   a: string;
+//   b: number;
+// } 
+
+// type Y =  {
+//   c: number;
+//   d: boolean;
+// }
+
+// let y: Y ={
+//   c: 100,
+//   d: true
+// };
+
+// let personName: unknown;
+
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+     <span className="heading">Taskify</span>
+    </div>
   )
 }
 
